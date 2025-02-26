@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Free Flora Website Template | Home :: w3layouts</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header {
+            width: 100%;
+            background: #c14000;
+            padding: 15px 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .wrap {
+            width: 90%;
+            margin: auto;
+            max-width: 1200px;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu-toggle {
+            display: none;
+            font-size: 2em;
+            color: white;
+            cursor: pointer;
+            position: relative;
+            z-index: 1100;
+        }
+        .nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            margin: 0;
+        }
+        .nav ul li {
+            margin: 0 15px;
+        }
+        .nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            .nav {
+                position: relative;
+            }
+            .nav ul {
+                display: none;
+                flex-direction: column;
+                background: #c14000;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+                text-align: center;
+            }
+            .nav ul.active {
+                display: flex;
+            }
+            .nav ul li {
+                margin: 10px 0;
+            }
+        }
+        .logo {
+            text-align: center;
+            font-size: 2em;
+            margin-top: 6em;
+        }
+        .box {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            margin: 20px auto;
+            flex: 1;
+            width: 90%;
+            max-width: 1000px;
+            height: auto;
+            padding: 50px;
+            font-size: 1.5em;
+            background:#501b00;
+            border-radius: 10px;
+        }
+        .box img {
+            max-width: 300px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .footer {
+            width: 100%;
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <span class="menu-toggle">&#9776;</span>
+        <div class="wrap">
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="single.html">Services</a></li>
+                    <li><a href="achieve.html">Achievements</a></li>
+                    <li><a href="feedback.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="logo"><a href="index.html">Adarsh Mohan P</a></div>
+        <div class="box">
+            <img src="iconimage.jpg">
+            <div>
+                <h2>About Me</h2>
+                <p>I am currently pursuing a B-Tech degree in Computer Science and Engineering from CUSAT, Kochi. My hometown is Kannur. I love watching movies, vlogs, etc. I am currently working on an emotion recognition system that can detect up to 7 emotions.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrap">
+            <ul>
+                <li><a href="https://www.instagram.com/adarshmohanp/"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/adarsh-mohan-p-a58999294"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+            <div class="copy">
+                <p>&copy; 2024 Flora. All Rights Reserved | Design by <a href="http://w3layouts.com">W3Layouts</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector(".nav ul").classList.toggle("active");
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/1807c198f4.js" crossorigin="anonymous"></script>
+</body>
+</html>
